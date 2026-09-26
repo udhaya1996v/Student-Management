@@ -3,3 +3,4 @@
 103,iniya,32,c++
 104,mani,26,fullstack
 105,ravi,28,python
+106,vignesh,34,DSA
