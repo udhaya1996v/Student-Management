@@ -1,0 +1,218 @@
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter ID: 107
+Enter Name: paithra
+Enter Age: 24
+Enter Course: full stack
+C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\src\main\java\Students.txt
+Students saved successfully.
+Student added successfully.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+ID: 100
+Name: udhaya
+Age: 23
+Course: java
+----------------
+ID: 101
+Name: rajkumar
+Age: 25
+Course: html
+----------------
+ID: 103
+Name: iniya
+Age: 32
+Course: c++
+----------------
+ID: 104
+Name: mani
+Age: 26
+Course: fullstack
+----------------
+ID: 105
+Name: ravi
+Age: 28
+Course: python
+----------------
+ID: 106
+Name: vignesh
+Age: 34
+Course: DSA
+----------------
+ID: 107
+Name: paithra
+Age: 24
+Course: full stack
+----------------
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 3
+Enter ID to search: 100
+ID: 100
+Name: udhaya
+Age: 23
+Course: java
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 3
+Enter ID to search: 99
+Student not found.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 4
+Enter ID to update: 108
+Student not found.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 4
+Enter ID to update: 107
+Enter new Name: kaviya
+Enter new Age: 21
+Enter new Course: html
+Student updated successfully.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+ID: 100
+Name: udhaya
+Age: 23
+Course: java
+----------------
+ID: 101
+Name: rajkumar
+Age: 25
+Course: html
+----------------
+ID: 103
+Name: iniya
+Age: 32
+Course: c++
+----------------
+ID: 104
+Name: mani
+Age: 26
+Course: fullstack
+----------------
+ID: 105
+Name: ravi
+Age: 28
+Course: python
+----------------
+ID: 106
+Name: vignesh
+Age: 34
+Course: DSA
+----------------
+ID: 107
+Name: kaviya
+Age: 21
+Course: html
+----------------
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 5
+Enter ID to delete: 107
+C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\src\main\java\Students.txt
+Students saved successfully.
+Student deleted successfully.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+ID: 100
+Name: udhaya
+Age: 23
+Course: java
+----------------
+ID: 101
+Name: rajkumar
+Age: 25
+Course: html
+----------------
+ID: 103
+Name: iniya
+Age: 32
+Course: c++
+----------------
+ID: 104
+Name: mani
+Age: 26
+Course: fullstack
+----------------
+ID: 105
+Name: ravi
+Age: 28
+Course: python
+----------------
+ID: 106
+Name: vignesh
+Age: 34
+Course: DSA
+----------------
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 6
+Thank you!
+
+Process finished with exit code 0
