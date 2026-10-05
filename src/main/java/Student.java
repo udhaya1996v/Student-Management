@@ -1,35 +1,52 @@
-//package java;
-public class Student {
 
-    int id;
-    String name;
-    int age;
-    String course;
+public class Student
+{
 
-    Student(int id, String name, int age, String course) {
+    private int id;
+    private String name;
+    private int age;
+    private String course;
+
+    public Student(int id, String name, int age, String course) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.course = course;
     }
 
-    void setName(String name) {
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    void setAge(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    void setCourse(String course) {
+    public void setCourse(String course) {
         this.course = course;
     }
 
-
-    void display() {
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Course: " + course);
+    public void display() {
+        System.out.println("ID     : " + id);
+        System.out.println("Name   : " + name);
+        System.out.println("Age    : " + age);
+        System.out.println("Course : " + course);
     }
 }
+

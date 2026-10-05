@@ -1,38 +1,62 @@
-//package java;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
-public class StudentManager
-{
+import java.util.Comparator;
+import java.util.Iterator;
 
-    ArrayList<Student> students = new ArrayList<>();
+public class StudentManager {
 
-    void addStudent(Student student)
-    {
+    private ArrayList<Student> students = new ArrayList<>();
+
+    // Add student
+    public void addStudent(Student student) {
+
         students.add(student);
         saveToFile();
+
         System.out.println("Student added successfully.");
     }
-    void viewStudents() {
+
+    // Check whether ID already exists
+    public boolean studentExists(int id) {
+
+        for (Student student : students) {
+
+            if (student.getId() == id) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // View all students
+    public void viewStudents() {
 
         if (students.isEmpty()) {
             System.out.println("No students found.");
             return;
         }
-        students.sort((s1, s2) -> s1.id - s2.id);
+
+        // Sort by ID in ascending order
+        students.sort(Comparator.comparingInt(Student::getId));
+
+        System.out.println("\n===== Student Records =====");
 
         for (Student student : students) {
+
             student.display();
-            System.out.println("----------------");
+            System.out.println("-------------------------");
         }
     }
-    void searchStudent(int id) {
+
+    // Search student
+    public void searchStudent(int id) {
 
         for (Student student : students) {
 
-            if (student.id == id) {
+            if (student.getId() == id) {
+
+                System.out.println("\nStudent found:");
                 student.display();
                 return;
             }
@@ -40,26 +64,23 @@ public class StudentManager
 
         System.out.println("Student not found.");
     }
-    boolean studentExists(int id) {
+
+    // Update student
+    public void updateStudent(
+            int id,
+            String name,
+            int age,
+            String course) {
 
         for (Student student : students) {
 
-            if (student.id == id) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-    void updateStudent(int id, String name, int age, String course) {
-
-        for (Student student : students) {
-
-            if (student.id == id) {
+            if (student.getId() == id) {
 
                 student.setName(name);
                 student.setAge(age);
                 student.setCourse(course);
+
+                saveToFile();
 
                 System.out.println("Student updated successfully.");
                 return;
@@ -68,13 +89,19 @@ public class StudentManager
 
         System.out.println("Student not found.");
     }
-    void deleteStudent(int id) {
 
-        for (Student student : students) {
+    // Delete student
+    public void deleteStudent(int id) {
 
-            if (student.id == id) {
+        Iterator<Student> iterator = students.iterator();
 
-                students.remove(student);
+        while (iterator.hasNext()) {
+
+            Student student = iterator.next();
+
+            if (student.getId() == id) {
+
+                iterator.remove();
 
                 saveToFile();
 
@@ -86,47 +113,54 @@ public class StudentManager
         System.out.println("Student not found.");
     }
 
-    void saveToFile() {
-
-        System.out.println(
-                new java.io.File("src/main/java/Students.txt").getAbsolutePath()
-        );
+    // Save records to file
+    public void saveToFile() {
 
         try {
 
-            FileWriter writer = new FileWriter("src/main/java/Students.txt");
+            FileWriter writer = new FileWriter("students.txt");
 
             for (Student student : students) {
 
                 writer.write(
-                        student.id + "," +
-                                student.name + "," +
-                                student.age + "," +
-                                student.course + "\n"
+                        student.getId() + "," +
+                                student.getName() + "," +
+                                student.getAge() + "," +
+                                student.getCourse() + "\n"
                 );
             }
 
             writer.close();
 
-            System.out.println("Students saved successfully.");
-
         } catch (IOException e) {
 
-            System.out.println("Error while saving file.");
+            System.out.println("Error while saving records.");
         }
     }
-    void loadFromFile() {
+
+    // Load records from file
+    public void loadFromFile() {
+
+        File file = new File("students.txt");
+
+        if (!file.exists()) {
+            return;
+        }
 
         try {
 
             BufferedReader reader =
-                    new BufferedReader(new FileReader("src/main/java/Students.txt"));
+                    new BufferedReader(new FileReader(file));
 
             String line;
 
             while ((line = reader.readLine()) != null) {
 
                 String[] data = line.split(",");
+
+                if (data.length != 4) {
+                    continue;
+                }
 
                 int id = Integer.parseInt(data[0]);
                 String name = data[1];
@@ -141,13 +175,9 @@ public class StudentManager
 
             reader.close();
 
-            System.out.println("Students information loaded successfully.");
+        } catch (IOException | NumberFormatException e) {
 
-        } catch (IOException e) {
-
-            System.out.println("File not found.");
+            System.out.println("Error while loading records.");
         }
     }
 }
-
-
