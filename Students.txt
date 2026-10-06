@@ -1,0 +1,11 @@
+1,udhaya,23,Java
+2,iniya,26,JavaScript
+3,mani,28,Data Structures
+4,rajkumar,26,Python
+5,geetha,28,JavaScript
+6,suresh,28,SQL
+7,vicky,25,C++
+8,ravi,26,Python
+9,meena,27,SQL
+10,pavithra,27,Java
+11,kalaivani,34,SQL

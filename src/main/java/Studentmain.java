@@ -36,7 +36,7 @@ public class Studentmain {
 
             switch (choice) {
 
-                // ADD STUDENT
+                // ================= ADD STUDENT =================
                 case 1:
 
                     System.out.print("Enter ID (1-1000): ");
@@ -55,11 +55,7 @@ public class Studentmain {
                     }
 
                     if (manager.studentExists(id)) {
-
-                        System.out.println(
-                                "Student ID already exists."
-                        );
-
+                        System.out.println("Student ID already exists.");
                         break;
                     }
 
@@ -87,7 +83,9 @@ public class Studentmain {
                         System.out.println("Age must be between 18 and 50.");
                         break;
                     }
-                    System.out.println("Select Course:");
+
+                    // Course selection
+                    System.out.println("\nSelect Course:");
                     System.out.println("1. Java");
                     System.out.println("2. Python");
                     System.out.println("3. C++");
@@ -105,7 +103,7 @@ public class Studentmain {
 
                     int courseChoice = sc.nextInt();
 
-                    String course;
+                    String course = "";
 
                     switch (courseChoice) {
 
@@ -134,8 +132,15 @@ public class Studentmain {
                             break;
 
                         default:
-                            System.out.println("Invalid course choice. Please select 1 to 6.");
-                            continue;
+                            System.out.println(
+                                    "Invalid course choice. Please select 1 to 6."
+                            );
+                            break;
+                    }
+
+                    // Handle invalid course choice
+                    if (courseChoice < 1 || courseChoice > 6) {
+                        break;
                     }
 
                     Student student =
@@ -146,7 +151,7 @@ public class Studentmain {
                     break;
 
 
-                // VIEW STUDENTS
+                // ================= VIEW STUDENTS =================
                 case 2:
 
                     manager.viewStudents();
@@ -154,10 +159,17 @@ public class Studentmain {
                     break;
 
 
-                // SEARCH STUDENT
+                // ================= SEARCH STUDENT =================
                 case 3:
 
                     System.out.print("Enter ID to search: ");
+
+                    if (!sc.hasNextInt()) {
+                        System.out.println("Invalid ID. Please enter a number.");
+                        sc.nextLine();
+                        break;
+                    }
+
                     int searchId = sc.nextInt();
 
                     manager.searchStudent(searchId);
@@ -165,96 +177,37 @@ public class Studentmain {
                     break;
 
 
-                // UPDATE STUDENT
+                // ================= UPDATE STUDENT =================
                 case 4:
 
-                    System.out.print("Enter ID to update: ");
-                    int updateId = sc.nextInt();
+                    System.out.print("Enter student ID to update: ");
 
-                    if (!manager.studentExists(updateId)) {
-
-                        System.out.println("Student not found.");
+                    if (!sc.hasNextInt()) {
+                        System.out.println("Invalid ID. Please enter a number.");
+                        sc.nextLine();
                         break;
                     }
+
+                    int updateId = sc.nextInt();
 
                     sc.nextLine();
 
-                    System.out.print("Enter new Name: ");
-                    String newName = sc.nextLine();
-
-                    if (newName.trim().isEmpty()) {
-
-                        System.out.println("Name cannot be empty.");
-                        break;
-                    }
-
-                    System.out.print("Enter new Age: ");
-                    int newAge = sc.nextInt();
-
-                    if (newAge <= 0 || newAge > 100) {
-
-                        System.out.println("Invalid age.");
-                        break;
-                    }
-
-                    System.out.println("\nSelect New Course:");
-                    System.out.println("1. Java");
-                    System.out.println("2. Python");
-                    System.out.println("3. C++");
-                    System.out.println("4. JavaScript");
-                    System.out.println("5. SQL");
-                    System.out.println("6. Data Structures");
-
-                    System.out.print("Enter course choice: ");
-                    int newCourseChoice = sc.nextInt();
-
-                    String newCourse;
-
-                    switch (newCourseChoice) {
-
-                        case 1:
-                            newCourse = "Java";
-                            break;
-
-                        case 2:
-                            newCourse = "Python";
-                            break;
-
-                        case 3:
-                            newCourse = "C++";
-                            break;
-
-                        case 4:
-                            newCourse = "JavaScript";
-                            break;
-
-                        case 5:
-                            newCourse = "SQL";
-                            break;
-
-                        case 6:
-                            newCourse = "Data Structures";
-                            break;
-
-                        default:
-                            System.out.println("Invalid course choice.");
-                            continue;
-                    }
-
-                    manager.updateStudent(
-                            updateId,
-                            newName,
-                            newAge,
-                            newCourse
-                    );
+                    manager.updateStudent(updateId, sc);
 
                     break;
 
 
-                // DELETE STUDENT
+                // ================= DELETE STUDENT =================
                 case 5:
 
                     System.out.print("Enter ID to delete: ");
+
+                    if (!sc.hasNextInt()) {
+                        System.out.println("Invalid ID. Please enter a number.");
+                        sc.nextLine();
+                        break;
+                    }
+
                     int deleteId = sc.nextInt();
 
                     manager.deleteStudent(deleteId);
@@ -262,7 +215,7 @@ public class Studentmain {
                     break;
 
 
-                // EXIT
+                // ================= EXIT =================
                 case 6:
 
                     System.out.println(
@@ -274,6 +227,7 @@ public class Studentmain {
                     return;
 
 
+                // ================= INVALID CHOICE =================
                 default:
 
                     System.out.println(

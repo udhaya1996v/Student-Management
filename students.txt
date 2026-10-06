@@ -1,8 +1,0 @@
-1,udhaya,21,Java
-2,iniya,25,Python
-3,rajkumar,23,Data Structures
-4,ravi,27,C++
-5,mani,34,JavaScript
-7,kavitha,36,SQL
-789,Aruvi,18,Python
-345,Ajith,34,C++
