@@ -1,3 +1,5 @@
+"C:\Program Files\Java\jdk-26.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.4\lib\idea_rt.jar=57927" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk-26.0.1\bin;C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\target\classes" Studentmain
+
 ===== Student Management System =====
 1. Add Student
 2. View All Students
@@ -10,33 +12,53 @@ Enter your choice: 2
 ===== Student Records =====
 ID     : 1
 Name   : udhaya
-Age    : 21
+Age    : 23
 Course : Java
 -------------------------
 ID     : 2
 Name   : iniya
-Age    : 25
-Course : Python
+Age    : 26
+Course : JavaScript
 -------------------------
 ID     : 3
-Name   : rajkumar
-Age    : 23
+Name   : mani
+Age    : 28
 Course : Data Structures
 -------------------------
 ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
+Name   : rajkumar
+Age    : 26
+Course : Python
 -------------------------
 ID     : 5
-Name   : mani
-Age    : 34
+Name   : geetha
+Age    : 28
 Course : JavaScript
 -------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
+ID     : 6
+Name   : suresh
+Age    : 28
 Course : SQL
+-------------------------
+ID     : 7
+Name   : vicky
+Age    : 25
+Course : C++
+-------------------------
+ID     : 8
+Name   : ravi
+Age    : 26
+Course : Python
+-------------------------
+ID     : 9
+Name   : meena
+Age    : 27
+Course : SQL
+-------------------------
+ID     : 10
+Name   : pavithra
+Age    : 27
+Course : Java
 -------------------------
 
 ===== Student Management System =====
@@ -46,8 +68,8 @@ Course : SQL
 4. Update Student
 5. Delete Student
 6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 89998dafas
+Enter your choice: 4
+Enter student ID to update: hdfh
 Invalid ID. Please enter a number.
 
 ===== Student Management System =====
@@ -67,10 +89,8 @@ Enter your choice: Please enter a valid number.
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 886
-Enter Name: Priya
-Enter Age: 08
-Age must be between 18 and 50.
+Enter ID (1-1000): 4
+Student ID already exists.
 
 ===== Student Management System =====
 1. Add Student
@@ -80,9 +100,10 @@ Age must be between 18 and 50.
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 182
-Enter Name: Jeeva
-Enter Age: 19
+Enter ID (1-1000): 11
+Enter Name: kalaivani
+Enter Age: 34
+
 Select Course:
 1. Java
 2. Python
@@ -90,8 +111,31 @@ Select Course:
 4. JavaScript
 5. SQL
 6. Data Structures
-Enter course choice: java
-Invalid choice. Please enter a number.
+Enter course choice: 5
+Student added successfully.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 4
+Enter student ID to update: 11
+Enter new name: 111
+Invalid name. Please enter letters only.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 3
+Enter ID to search: hg
+Invalid ID. Please enter a number.
 
 ===== Student Management System =====
 1. Add Student
@@ -110,18 +154,8 @@ Enter your choice: Please enter a valid number.
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 789
-Enter Name: Sundaresan
-Enter Age: 44
-Select Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 1
-Student added successfully.
+Enter ID (1-1000): jh
+Invalid ID. Please enter a number.
 
 ===== Student Management System =====
 1. Add Student
@@ -130,160 +164,7 @@ Student added successfully.
 4. Update Student
 5. Delete Student
 6. Exit
-Enter your choice: 2
-
-===== Student Records =====
-ID     : 1
-Name   : udhaya
-Age    : 21
-Course : Java
--------------------------
-ID     : 2
-Name   : iniya
-Age    : 25
-Course : Python
--------------------------
-ID     : 3
-Name   : rajkumar
-Age    : 23
-Course : Data Structures
--------------------------
-ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
--------------------------
-ID     : 5
-Name   : mani
-Age    : 34
-Course : JavaScript
--------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
-Course : SQL
--------------------------
-ID     : 789
-Name   : Sundaresan
-Age    : 44
-Course : Java
--------------------------
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 4
-Enter ID to update: 789
-Enter new Name: Aruvi
-Enter new Age: 18
-
-Select New Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 2
-Student updated successfully.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 2
-
-===== Student Records =====
-ID     : 1
-Name   : udhaya
-Age    : 21
-Course : Java
--------------------------
-ID     : 2
-Name   : iniya
-Age    : 25
-Course : Python
--------------------------
-ID     : 3
-Name   : rajkumar
-Age    : 23
-Course : Data Structures
--------------------------
-ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
--------------------------
-ID     : 5
-Name   : mani
-Age    : 34
-Course : JavaScript
--------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
-Course : SQL
--------------------------
-ID     : 789
-Name   : Aruvi
-Age    : 18
-Course : Python
--------------------------
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 3
-Enter ID to search: 789
-
-Student found:
-ID     : 789
-Name   : Aruvi
-Age    : 18
-Course : Python
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 345
-Enter Name: Ajith
-Enter Age: 34
-Select Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 3
-Student added successfully.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 4566
-ID must be between 1 and 1000.
+Enter your choice: Please enter a valid number.
 
 ===== Student Management System =====
 1. Add Student
