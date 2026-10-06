@@ -1,3 +1,43 @@
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+
+===== Student Records =====
+ID     : 1
+Name   : udhaya
+Age    : 21
+Course : Java
+-------------------------
+ID     : 2
+Name   : iniya
+Age    : 25
+Course : Python
+-------------------------
+ID     : 3
+Name   : rajkumar
+Age    : 23
+Course : Data Structures
+-------------------------
+ID     : 4
+Name   : ravi
+Age    : 27
+Course : C++
+-------------------------
+ID     : 5
+Name   : mani
+Age    : 34
+Course : JavaScript
+-------------------------
+ID     : 7
+Name   : kavitha
+Age    : 36
+Course : SQL
+-------------------------
 
 ===== Student Management System =====
 1. Add Student
@@ -7,12 +47,80 @@
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID: 107
-Enter Name: paithra
-Enter Age: 24
-Enter Course: full stack
-C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\src\main\java\Students.txt
-Students saved successfully.
+Enter ID (1-1000): 89998dafas
+Invalid ID. Please enter a number.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: Please enter a valid number.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter ID (1-1000): 886
+Enter Name: Priya
+Enter Age: 08
+Age must be between 18 and 50.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter ID (1-1000): 182
+Enter Name: Jeeva
+Enter Age: 19
+Select Course:
+1. Java
+2. Python
+3. C++
+4. JavaScript
+5. SQL
+6. Data Structures
+Enter course choice: java
+Invalid choice. Please enter a number.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: Please enter a valid number.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter ID (1-1000): 789
+Enter Name: Sundaresan
+Enter Age: 44
+Select Course:
+1. Java
+2. Python
+3. C++
+4. JavaScript
+5. SQL
+6. Data Structures
+Enter course choice: 1
 Student added successfully.
 
 ===== Student Management System =====
@@ -23,66 +131,43 @@ Student added successfully.
 5. Delete Student
 6. Exit
 Enter your choice: 2
-ID: 100
-Name: udhaya
-Age: 23
-Course: java
-----------------
-ID: 101
-Name: rajkumar
-Age: 25
-Course: html
-----------------
-ID: 103
-Name: iniya
-Age: 32
-Course: c++
-----------------
-ID: 104
-Name: mani
-Age: 26
-Course: fullstack
-----------------
-ID: 105
-Name: ravi
-Age: 28
-Course: python
-----------------
-ID: 106
-Name: vignesh
-Age: 34
-Course: DSA
-----------------
-ID: 107
-Name: paithra
-Age: 24
-Course: full stack
-----------------
 
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 3
-Enter ID to search: 100
-ID: 100
-Name: udhaya
-Age: 23
-Course: java
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 3
-Enter ID to search: 99
-Student not found.
+===== Student Records =====
+ID     : 1
+Name   : udhaya
+Age    : 21
+Course : Java
+-------------------------
+ID     : 2
+Name   : iniya
+Age    : 25
+Course : Python
+-------------------------
+ID     : 3
+Name   : rajkumar
+Age    : 23
+Course : Data Structures
+-------------------------
+ID     : 4
+Name   : ravi
+Age    : 27
+Course : C++
+-------------------------
+ID     : 5
+Name   : mani
+Age    : 34
+Course : JavaScript
+-------------------------
+ID     : 7
+Name   : kavitha
+Age    : 36
+Course : SQL
+-------------------------
+ID     : 789
+Name   : Sundaresan
+Age    : 44
+Course : Java
+-------------------------
 
 ===== Student Management System =====
 1. Add Student
@@ -92,21 +177,18 @@ Student not found.
 5. Delete Student
 6. Exit
 Enter your choice: 4
-Enter ID to update: 108
-Student not found.
+Enter ID to update: 789
+Enter new Name: Aruvi
+Enter new Age: 18
 
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 4
-Enter ID to update: 107
-Enter new Name: kaviya
-Enter new Age: 21
-Enter new Course: html
+Select New Course:
+1. Java
+2. Python
+3. C++
+4. JavaScript
+5. SQL
+6. Data Structures
+Enter course choice: 2
 Student updated successfully.
 
 ===== Student Management System =====
@@ -117,41 +199,43 @@ Student updated successfully.
 5. Delete Student
 6. Exit
 Enter your choice: 2
-ID: 100
-Name: udhaya
-Age: 23
-Course: java
-----------------
-ID: 101
-Name: rajkumar
-Age: 25
-Course: html
-----------------
-ID: 103
-Name: iniya
-Age: 32
-Course: c++
-----------------
-ID: 104
-Name: mani
-Age: 26
-Course: fullstack
-----------------
-ID: 105
-Name: ravi
-Age: 28
-Course: python
-----------------
-ID: 106
-Name: vignesh
-Age: 34
-Course: DSA
-----------------
-ID: 107
-Name: kaviya
-Age: 21
-Course: html
-----------------
+
+===== Student Records =====
+ID     : 1
+Name   : udhaya
+Age    : 21
+Course : Java
+-------------------------
+ID     : 2
+Name   : iniya
+Age    : 25
+Course : Python
+-------------------------
+ID     : 3
+Name   : rajkumar
+Age    : 23
+Course : Data Structures
+-------------------------
+ID     : 4
+Name   : ravi
+Age    : 27
+Course : C++
+-------------------------
+ID     : 5
+Name   : mani
+Age    : 34
+Course : JavaScript
+-------------------------
+ID     : 7
+Name   : kavitha
+Age    : 36
+Course : SQL
+-------------------------
+ID     : 789
+Name   : Aruvi
+Age    : 18
+Course : Python
+-------------------------
 
 ===== Student Management System =====
 1. Add Student
@@ -160,11 +244,14 @@ Course: html
 4. Update Student
 5. Delete Student
 6. Exit
-Enter your choice: 5
-Enter ID to delete: 107
-C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\src\main\java\Students.txt
-Students saved successfully.
-Student deleted successfully.
+Enter your choice: 3
+Enter ID to search: 789
+
+Student found:
+ID     : 789
+Name   : Aruvi
+Age    : 18
+Course : Python
 
 ===== Student Management System =====
 1. Add Student
@@ -173,37 +260,30 @@ Student deleted successfully.
 4. Update Student
 5. Delete Student
 6. Exit
-Enter your choice: 2
-ID: 100
-Name: udhaya
-Age: 23
-Course: java
-----------------
-ID: 101
-Name: rajkumar
-Age: 25
-Course: html
-----------------
-ID: 103
-Name: iniya
-Age: 32
-Course: c++
-----------------
-ID: 104
-Name: mani
-Age: 26
-Course: fullstack
-----------------
-ID: 105
-Name: ravi
-Age: 28
-Course: python
-----------------
-ID: 106
-Name: vignesh
-Age: 34
-Course: DSA
-----------------
+Enter your choice: 1
+Enter ID (1-1000): 345
+Enter Name: Ajith
+Enter Age: 34
+Select Course:
+1. Java
+2. Python
+3. C++
+4. JavaScript
+5. SQL
+6. Data Structures
+Enter course choice: 3
+Student added successfully.
+
+===== Student Management System =====
+1. Add Student
+2. View All Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter ID (1-1000): 4566
+ID must be between 1 and 1000.
 
 ===== Student Management System =====
 1. Add Student
@@ -213,6 +293,6 @@ Course: DSA
 5. Delete Student
 6. Exit
 Enter your choice: 6
-Thank you!
+Thank you for using Student Management System.
 
 Process finished with exit code 0
