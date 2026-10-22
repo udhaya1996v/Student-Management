@@ -1,298 +1,371 @@
-===== Student Management System =====
+"C:\Program Files\Java\jdk-26.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.4\lib\idea_rt.jar=49866" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk-26.0.1\bin;C:\Users\Rajkumar udhaya\OneDrive\Desktop\Udhaya Student Management\Student Management\target\classes" Studentmain
+Loaded 2 student record(s).
+Welcome to Student Management System!
+
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter student ID (1-1000): 100
+ID 100 already exists!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 2
 
-===== Student Records =====
-ID     : 1
-Name   : udhaya
-Age    : 21
-Course : Java
--------------------------
-ID     : 2
-Name   : iniya
-Age    : 25
-Course : Python
--------------------------
-ID     : 3
-Name   : rajkumar
-Age    : 23
-Course : Data Structures
--------------------------
-ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
--------------------------
-ID     : 5
-Name   : mani
-Age    : 34
-Course : JavaScript
--------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
-Course : SQL
--------------------------
+--- Student Records ---
+ID       Name                 Age      Course                   
+---------------------------------------------------------------
+100      udhaya               25       Cloud Computing          
+101      rajkumar             26       Java Development         
 
-===== Student Management System =====
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 11
+Invalid choice. Please select 1-6.
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 89998dafas
-Invalid ID. Please enter a number.
+Enter student ID (1-1000): 102
+Enter student name: Iniya
+Enter age (18-50): 34
 
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: Please enter a valid number.
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 3
+Student added successfully!
 
-===== Student Management System =====
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 886
-Enter Name: Priya
-Enter Age: 08
-Age must be between 18 and 50.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 182
-Enter Name: Jeeva
-Enter Age: 19
-Select Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: java
-Invalid choice. Please enter a number.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: Please enter a valid number.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 1
-Enter ID (1-1000): 789
-Enter Name: Sundaresan
-Enter Age: 44
-Select Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 1
-Student added successfully.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 2
 
-===== Student Records =====
-ID     : 1
-Name   : udhaya
-Age    : 21
-Course : Java
--------------------------
-ID     : 2
-Name   : iniya
-Age    : 25
-Course : Python
--------------------------
-ID     : 3
-Name   : rajkumar
-Age    : 23
-Course : Data Structures
--------------------------
-ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
--------------------------
-ID     : 5
-Name   : mani
-Age    : 34
-Course : JavaScript
--------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
-Course : SQL
--------------------------
-ID     : 789
-Name   : Sundaresan
-Age    : 44
-Course : Java
--------------------------
+--- Student Records ---
+ID       Name                 Age      Course                   
+---------------------------------------------------------------
+100      udhaya               25       Cloud Computing          
+101      rajkumar             26       Java Development         
+102      Iniya                34       Python Development       
 
-===== Student Management System =====
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 4
-Enter ID to update: 789
-Enter new Name: Aruvi
-Enter new Age: 18
-
-Select New Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 2
-Student updated successfully.
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Exit
-Enter your choice: 2
-
-===== Student Records =====
-ID     : 1
-Name   : udhaya
-Age    : 21
-Course : Java
--------------------------
-ID     : 2
-Name   : iniya
-Age    : 25
-Course : Python
--------------------------
-ID     : 3
-Name   : rajkumar
-Age    : 23
-Course : Data Structures
--------------------------
-ID     : 4
-Name   : ravi
-Age    : 27
-Course : C++
--------------------------
-ID     : 5
-Name   : mani
-Age    : 34
-Course : JavaScript
--------------------------
-ID     : 7
-Name   : kavitha
-Age    : 36
-Course : SQL
--------------------------
-ID     : 789
-Name   : Aruvi
-Age    : 18
-Course : Python
--------------------------
-
-===== Student Management System =====
-1. Add Student
-2. View All Students
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 3
-Enter ID to search: 789
+Enter student ID (1-1000): 100
 
 Student found:
-ID     : 789
-Name   : Aruvi
-Age    : 18
-Course : Python
+ID: 100
+Name: udhaya
+Age: 25
+Course: Cloud Computing
 
-===== Student Management System =====
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 4
+Enter student ID (1-1000): 103
+Student not found.
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 5
+Enter student ID (1-1000): 103
+Student not found.
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 5
+Enter student ID (1-1000): 102
+Student deleted successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+
+--- Student Records ---
+ID       Name                 Age      Course                   
+---------------------------------------------------------------
+100      udhaya               25       Cloud Computing          
+101      rajkumar             26       Java Development         
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 345
-Enter Name: Ajith
-Enter Age: 34
-Select Course:
-1. Java
-2. Python
-3. C++
-4. JavaScript
-5. SQL
-6. Data Structures
-Enter course choice: 3
-Student added successfully.
+Enter student ID (1-1000): 102
+Enter student name: Iniya
+Enter age (18-50): 29
 
-===== Student Management System =====
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 1
+Student added successfully!
+
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 1
-Enter ID (1-1000): 4566
-ID must be between 1 and 1000.
+Enter student ID (1-1000): 104
+Enter student name: Mani
+Enter age (18-50): 24
 
-===== Student Management System =====
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 4
+Student added successfully!
+
+===== MAIN MENU =====
 1. Add Student
-2. View All Students
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 105
+
+Invalid choice. Please select 1-6.
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: Please enter a valid number.
+Enter your choice: 1
+Enter student ID (1-1000): 103
+Enter student name: Kaviya
+Enter age (18-50): 30
+
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 3
+Student added successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter student ID (1-1000): 105
+Enter student name: vicky
+Enter age (18-50): 27
+
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 5
+Student added successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+
+--- Student Records ---
+ID       Name                 Age      Course                   
+---------------------------------------------------------------
+100      udhaya               25       Cloud Computing          
+101      rajkumar             26       Java Development         
+102      Iniya                29       Full Stack Development   
+103      Kaviya               30       Python Development       
+104      Mani                 24       Data Analytics           
+105      vicky                27       Cloud Computing          
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter student ID (1-1000): 34
+Enter student name: Priya
+Enter age (18-50): 36
+
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 1
+Student added successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 2
+
+--- Student Records ---
+ID       Name                 Age      Course                   
+---------------------------------------------------------------
+34       Priya                36       Full Stack Development   
+100      udhaya               25       Cloud Computing          
+101      rajkumar             26       Java Development         
+102      Iniya                29       Full Stack Development   
+103      Kaviya               30       Python Development       
+104      Mani                 24       Data Analytics           
+105      vicky                27       Cloud Computing          
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter student ID (1-1000): sdgg
+Please enter a valid number.
+Enter student ID (1-1000): 1
+Enter student name: lakshmi
+Enter age (18-50): te7
+Please enter a valid number.
+Enter age (18-50): 2r
+Please enter a valid number.
+Enter age (18-50): 25
+
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 9
+Invalid choice. Please select 1-5.
+Select course (1-5): df
+Please enter a valid number.
+Select course (1-5): 2
+Student added successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 5
+Enter student ID (1-1000): 34
+Student deleted successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
+Enter your choice: 1
+Enter student ID (1-1000): 106
+Enter student name: priya
+Enter age (18-50): 34
+
+Available Courses:
+1. Full Stack Development
+2. Java Development
+3. Python Development
+4. Data Analytics
+5. Cloud Computing
+Select course (1-5): 3
+Student added successfully!
+
+===== MAIN MENU =====
+1. Add Student
+2. View Students
 3. Search Student
 4. Update Student
 5. Delete Student
 6. Exit
 Enter your choice: 6
-Thank you for using Student Management System.
+Thank you for using Student Management System!
 
 Process finished with exit code 0
